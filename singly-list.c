@@ -61,6 +61,51 @@ main()
                case 4:
                printf("Enter the element to be inserted:");
                scanf("%d", &data);
+               break;
+               case 5:
+               printf("Enter the element to be inserted");
+               scanf("%d", &data);
+               insertAtEnd(start, data);
+               break;
+               case 6:
+               printf("Enter the element to be inserted");
+               scanf("%d", &data);
+               printf("Enter the element which to insert:");
+               scanf("%d", &x);
+               insertAfter(start, data,x);
+               break;
+               case 7:
+               printf("Enter the element to be inserted :");
+               scanf("%d", &x);
+               printf("Enter the element before which to insert :");
+               scanf("%d", &x);
+               start= insertBefore(start,data,x);
+               break;
+               case 8:
+               printf("Enter the element to be inserted:");
+               scanf("%d", &data);
+               printf("Enter the position at which to insert:");
+               scanf("%d", &k);
+               start=insertAtPosition(start, data,k);
+               break;
+               case 9:
+               printf("Enter the element to be deleted :");
+               scanf("%d", &data);
+               start=deleteNode(start, data);
+               break;
+               case 10:
+               start=reverseList(start);
+               break;
+               default:
+               printf("Wrong choice\n");
           }
      }
 }
+
+// End of main function;
+struct node *createList(struct node *start)
+{
+     int i,n,data;
+}
+
+
