@@ -40,3 +40,4 @@ monolithic= more functions in one main
 more functions is called modular/procedural programming
 
 
+# data-structure
