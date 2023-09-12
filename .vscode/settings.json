@@ -54,9 +54,25 @@
     "**/.vscode",
     "**/.vscode/**"
   ],
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+        {
+            "scope": [
+                "keyword.control.module.node",  // This scope targets file names
+            ],
+            "settings": {
+                "foreground": "#313131"  // Change this color code to the color you prefer
+            }
+        }
+    ]
+  },
+
+
   "C_Cpp_Runner.useAddressSanitizer": false,
   "C_Cpp_Runner.useUndefinedSanitizer": false,
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false
 }
+
